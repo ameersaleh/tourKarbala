@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1077377799156",
+    "firebase_url": "https://recevedatadalel.firebaseio.com",
+    "project_id": "recevedatadalel",
+    "storage_bucket": "recevedatadalel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077377799156:android:79170efc62cc2fc4cf1fa1",
+        "android_client_info": {
+          "package_name": "com.example.tourkarbalaa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077377799156-q3101m9vr50to9lqqqqe542fm52k1gje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2XBSRHNJ07j_LS54SGWdVGm2GlyclNO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077377799156-q3101m9vr50to9lqqqqe542fm52k1gje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
