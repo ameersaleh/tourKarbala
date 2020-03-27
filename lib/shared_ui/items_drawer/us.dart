@@ -105,21 +105,8 @@ textAlign: TextAlign.start,
                 color: Colors.black87,
               ),
 
-              Padding(padding: EdgeInsets.only(right: 20,left: 20),
-                child: Text(
-                  ' تجميع البيانات : امير صالح',
-                  textDirection: TextDirection.rtl,
-                  style: TextStyle(
-                    fontSize: 20.0,
-                    color: Colors.black,
-                    fontWeight: FontWeight.w800,
-                  ),
-                ),
-              ),
-              Divider(
-                height: 20,
-                color: Colors.black87,
-              ),
+
+
               Padding(padding: EdgeInsets.all(35.0)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,

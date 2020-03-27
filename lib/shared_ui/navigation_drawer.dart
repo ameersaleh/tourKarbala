@@ -8,6 +8,7 @@ import 'package:tourkarbalaa/shared_ui/items_drawer/about_c4i.dart';
 import 'package:tourkarbalaa/shared_ui/items_drawer/contact.dart';
 import 'package:tourkarbalaa/shared_ui/items_drawer/proposals.dart';
 import 'package:tourkarbalaa/shared_ui/items_drawer/us.dart';
+
 class NavigationDrawer extends StatefulWidget {
   @override
   _NavigationDrawerState createState() => _NavigationDrawerState();
@@ -95,6 +96,7 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
                         _buildRow(Icons.email, "راسلنا",Contact(),context),
                         _buildDivider(),_buildRow(Icons.comment, " مقترحات",Proposals(),context),
                         _buildDivider(),
+
                       ],
                     ),
                   ),
@@ -107,36 +109,6 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
       ),
     );
 
-//    return Drawer(
-//      child: Padding(
-//        padding: EdgeInsets.only(left: 24, top: 75),
-//        child: ListView.builder(
-//          itemBuilder: (context, positon) {
-//            return Padding(
-//              padding: const EdgeInsets.all(8.0),
-//              child: ListTile(
-//                title: Text(
-//                  navigationMenu[positon].title,
-//                  style: TextStyle(color: Colors.grey.shade600,fontSize: 22),
-//                ),
-//                trailing: Icon(
-//                  Icons.chevron_right,
-//                  color: Colors.grey.shade500,
-//                ),
-//                onTap: () {
-//                  Navigator.pop(context);
-//                  Navigator.push(context, MaterialPageRoute(builder: (context){
-//                    return navigationMenu[positon].destination();
-//                  },
-//                  ));
-//                },
-//              ),
-//            );
-//          },
-//          itemCount: navigationMenu.length,
-//        ),
-//      ),
-//    );
   }
   Divider _buildDivider() {
     return Divider(
