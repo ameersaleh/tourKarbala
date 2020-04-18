@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:http/http.dart' as http;
+
+import '../navigation_drawer.dart';
 class Contact extends StatefulWidget {
   @override
   _ContactState createState() => _ContactState();
@@ -39,36 +41,16 @@ void customLaunch (command) async {
           'راسلنا ',
         ),
         centerTitle: true,
+        automaticallyImplyLeading: false,
       ),
+      endDrawer: NavigationDrawer(),
       body:Container(margin: EdgeInsets.all(24),
         child: Column(crossAxisAlignment: CrossAxisAlignment.center,
 
           children: <Widget>[
-          Padding(padding: EdgeInsets.only(right: 190,left: 190,bottom: 200),),
+          Padding(padding: EdgeInsets.only(right: 190,left: 190,bottom: 120),),
 
 
-
-//            RaisedButton(
-//
-//
-//              onPressed: ()=> customLaunch('tel:07801780690'),
-//              child: Text("رقم الهاتف",
-//
-//
-//              ),
-//            ),
-//            RaisedButton(
-//              onPressed: ()=> customLaunch('mailto:salahameer0@gmail.com?subject= &body= '),
-//              child: Text("بريد الكتروني",
-//
-//              ),
-//            ),
-//            RaisedButton(
-//              onPressed: ()=> customLaunch('https://t.me/pro_ameer'),
-//              child: Text("تليغرام",
-//
-//              ),
-//            ),
 
 
             
@@ -96,11 +78,13 @@ void customLaunch (command) async {
                 borderRadius: BorderRadius.circular(25.0),
               ),
               child: Center(
+
                 child: ListTile(contentPadding: EdgeInsets.only(right: 105),
                   trailing: Text('بريد الكتروني',textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 20),),
                   selected: true,
                   onTap: () => customLaunch('mailto:salahameer0@gmail.com?subject= &body= '),
                 ),
+
               ),
             ),
             SizedBox(height: 20,),

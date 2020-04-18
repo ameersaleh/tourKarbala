@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../navigation_drawer.dart';
+
 class AboutC4i extends StatefulWidget {
   @override
   _AboutC4iState createState() => _AboutC4iState();
@@ -14,7 +16,9 @@ class _AboutC4iState extends State<AboutC4i> {
           'حول المبادرة',
         ),
         centerTitle: true,
+        automaticallyImplyLeading: false,
       ),
+      endDrawer: NavigationDrawer(),
       body: Container(
         padding:
         EdgeInsets.only(top: 5.0, bottom: 5.0, left: 20.0, right: 20.0),
@@ -43,24 +47,7 @@ class _AboutC4iState extends State<AboutC4i> {
                   color: Colors.black,
                 ),
               ),
-              Divider(
-                height: 20,
-                color: Colors.black87,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Icon(Icons.copyright),
-                  Text('code for iraq',
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16
-                    ),
-                  ),
 
-                ],
-              )
             ],
           ),
         ),

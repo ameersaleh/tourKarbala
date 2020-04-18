@@ -4,6 +4,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../navigation_drawer.dart';
+
 class Proposals extends StatefulWidget {
   @override
   _ProposalsState createState() => _ProposalsState();
@@ -23,7 +25,11 @@ class _ProposalsState extends State<Proposals> {
       s = name.text;
     });
   }
-
+void hideData(){
+    setState(() {
+      name.clear();
+    });
+}
   void createRecord(String name) async {
     DocumentReference reference =
         await databaseReference.collection("db_karbala").add({
@@ -39,8 +45,9 @@ class _ProposalsState extends State<Proposals> {
         appBar: AppBar(
             title: Text('مقترحات '),
            centerTitle: true,
-
+          automaticallyImplyLeading: false,
         ),
+        endDrawer: NavigationDrawer(),
         body: Container(
           color: Colors.redAccent,
           child: DecoratedBox(
@@ -65,6 +72,7 @@ class _ProposalsState extends State<Proposals> {
                         borderRadius: BorderRadius.all(Radius.circular(36))),
                     child: TextField(
                       controller: name,
+
                       textAlign: TextAlign.right,
                       decoration: InputDecoration(
                           hintText: 'ادخل مقترحك هنا',
@@ -91,7 +99,11 @@ class _ProposalsState extends State<Proposals> {
                           borderRadius: BorderRadius.circular(20.0),
                           side: BorderSide(color: Colors.redAccent),
                         ),
-                        onPressed: showSnackbar,
+                        onPressed:() {
+                          showSnackbar();
+                          hideData();
+                        },
+
 //                            () {
 //
 //

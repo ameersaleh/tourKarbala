@@ -57,6 +57,7 @@ class _HomeScreenState extends State<HomeScreen>
           ],
           controller: _tabController,
         ),
+        automaticallyImplyLeading: false,
       ),
       endDrawer: NavigationDrawer(),
       body: Center(

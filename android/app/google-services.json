@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1077377799156:android:79170efc62cc2fc4cf1fa1",
+        "mobilesdk_app_id": "1:1077377799156:android:f44a4e3009002569cf1fa1",
         "android_client_info": {
-          "package_name": "com.example.tourkarbalaa"
+          "package_name": "org.codeforiraq.tourkarbalaa"
         }
       },
       "oauth_client": [

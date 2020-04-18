@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../navigation_drawer.dart';
+
 
 class Us extends StatefulWidget {
   @override
@@ -16,16 +18,18 @@ class _UsState extends State<Us> {
           'فريق العمل',
         ),
         centerTitle: true,
+        automaticallyImplyLeading: false,
       ),
+      endDrawer: NavigationDrawer(),
       body: Container(
         padding:
         EdgeInsets.only(top: 0.0, bottom: 0.0, left: 0.0, right: 0.0),
         child: Center(
           child: ListView(
             children: <Widget>[
-              Padding(padding: EdgeInsets.only(top:0.0, right: 10, left: 10,)),
+              Padding(padding: EdgeInsets.only(top:20.0, right: 20, left: 50,)),
 
-              Image.asset('assets/images/about/team2.jpg'),
+              Image.asset('assets/images/about/team.png'),
 
 
               Padding(padding: EdgeInsets.all(10.0)),
@@ -108,20 +112,7 @@ textAlign: TextAlign.start,
 
 
               Padding(padding: EdgeInsets.all(35.0)),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Icon(Icons.copyright),
-                  Text('code for iraq',
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16
-                    ),
-                  ),
-
-                ],
-              )
+        
             ],
           ),
         ),
